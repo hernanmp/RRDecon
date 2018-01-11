@@ -1,9 +1,9 @@
 # RRDecon
 
 To install and use the package  you can run in R:
-library(devtools)
-install_github('RRDecon','hernanmp')
-library(RRDecon)
+-library(devtools)
+-install_github('RRDecon','hernanmp')
+-library(RRDecon)
 
 This an R package based on the methods from the paper "A deconvolution path for mixtures".  The main functions in the package R:
 - L2_deconvolution_path
