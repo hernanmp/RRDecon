@@ -1,12 +1,12 @@
 #' L2  deconconvolution path function
 #'
-#' This function allows to the deconvolution path using L2  regularization
-#' @param y a vector containing the raw observations.
-#' @param lambda_grid a vector containing a list of regularization parameters to compute the path. Deafault choice is sort(c(0.001,0.1,5,seq(10,400,length = 16),seq(500,2000,length = 10),20000)).
-#' @param d number of bins, the default  choice is floor(  (length(y)^(1/(2.01)) ))
-#' @return loc location of the centers of bins where the density is estimated
-#' @return f_hat a matrix containing the solution path of mixing densities, each row corresponds to regularization parameter.
-#' @return y_hat a matrix containing the solution path of marginal densities, each row corresponds to regularization parameter.
+#' This function allows to compute the deconvolution path using L2  regularization
+#' @param y : a vector containing the raw observations.
+#' @param lambda_grid : a vector containing a list of regularization parameters to compute the path. Deafault choice is sort(c(0.001,0.1,5,seq(10,400,length = 16),seq(500,2000,length = 10),20000)).
+#' @param d : number of bins, the default  choice is floor(  (length(y)^(1/(2.01)) ))
+#' @return loc : location of the centers of bins where the density is estimated
+#' @return f_hat : a matrix containing the solution path of mixing densities, each row corresponds to regularization parameter.
+#' @return y_hat : a matrix containing the solution path of marginal densities, each row corresponds to regularization parameter.
 #' @export
 #' L2_deconvolution_path
 

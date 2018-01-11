@@ -9,19 +9,19 @@ L2_deconvolution_path(y, lambda_grid = sort(c(0.001, 0.1, 5, seq(10, 400,
   d = floor((length(y)^(1/(2.01)))))
 }
 \arguments{
-\item{y}{a vector containing the raw observations.}
+\item{y}{: a vector containing the raw observations.}
 
-\item{lambda_grid}{a vector containing a list of regularization parameters to compute the path. Deafault choice is sort(c(0.001,0.1,5,seq(10,400,length = 16),seq(500,2000,length = 10),20000)).}
+\item{lambda_grid}{: a vector containing a list of regularization parameters to compute the path. Deafault choice is sort(c(0.001,0.1,5,seq(10,400,length = 16),seq(500,2000,length = 10),20000)).}
 
-\item{d}{number of bins, the default  choice is floor(  (length(y)^(1/(2.01)) ))}
+\item{d}{: number of bins, the default  choice is floor(  (length(y)^(1/(2.01)) ))}
 }
 \value{
-loc location of the centers of bins where the density is estimated
+loc : location of the centers of bins where the density is estimated
 
-f_hat a matrix containing the solution path of mixing densities, each row corresponds to regularization parameter.
+f_hat : a matrix containing the solution path of mixing densities, each row corresponds to regularization parameter.
 
-y_hat a matrix containing the solution path of marginal densities, each row corresponds to regularization parameter.
+y_hat : a matrix containing the solution path of marginal densities, each row corresponds to regularization parameter.
 }
 \description{
-This function allows to the deconvolution path using L2  regularization
+This function allows to compute the deconvolution path using L2  regularization
 }

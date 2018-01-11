@@ -7,16 +7,16 @@
 L1_deconvolution(y, d)
 }
 \arguments{
-\item{y}{a vector containing the raw observations.}
+\item{y}{: a vector containing the raw observations.}
 
-\item{d}{number of bins}
+\item{d}{: number of bins}
 }
 \value{
-loc location of the centers of bins where the density is estimated
+loc : location of the centers of bins where the density is estimated
 
-f_hat estimated mixing density
+f_hat : estimated mixing density
 
-y_hat marginal density
+y_hat : marginal density
 }
 \description{
 This function allows to perform L1 deconvolution with model selection as in the paper "A deconvolution path for mixtures"

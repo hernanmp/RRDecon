@@ -9,20 +9,20 @@ L2_deconvolution(y, prop = 0.25, d = floor((length(y)^(1/(2.01)))),
   2000, length = 10), 20000)))
 }
 \arguments{
-\item{y}{a vector containing the raw observations.}
+\item{y}{: a vector containing the raw observations.}
 
-\item{prop}{a scalar between 0 and 1  indicating the proportion of samples to be used as held out set. The default choice is 0.25}
+\item{prop}{: a scalar between 0 and 1  indicating the proportion of samples to be used as held out set. The default choice is 0.25}
 
-\item{d}{number of bins,  the default choice is floor(  (length(y)^(1/(2.01)) ))}
+\item{d}{: number of bins,  the default choice is floor(  (length(y)^(1/(2.01)) ))}
 
-\item{lambda_grid}{list of reuglarization parameters, default choice is  sort(c(0.001,0.1,5,seq(10,400,length = 16),seq(500,2000,length = 10),20000))}
+\item{lambda_grid}{: list of reuglarization parameters, default choice is  sort(c(0.001,0.1,5,seq(10,400,length = 16),seq(500,2000,length = 10),20000))}
 }
 \value{
-loc location of the centers of bins where the density is estimated
+loc : location of the centers of bins where the density is estimated
 
-f_hat estimated mixing density
+f_hat : estimated mixing density
 
-y_hat marginal density
+y_hat : marginal density
 }
 \description{
 This function allows to perform L2 deconvolution with model selection as in the paper "A deconvolution path for mixtures"

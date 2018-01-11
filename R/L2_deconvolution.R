@@ -1,13 +1,13 @@
 #' L2  deconconvolution function
 #'
 #' This function allows to perform L2 deconvolution with model selection as in the paper "A deconvolution path for mixtures"
-#' @param y a vector containing the raw observations.
-#' @param prop a scalar between 0 and 1  indicating the proportion of samples to be used as held out set. The default choice is 0.25
-#' @param d number of bins,  the default choice is floor(  (length(y)^(1/(2.01)) ))
-#' @param lambda_grid list of reuglarization parameters, default choice is  sort(c(0.001,0.1,5,seq(10,400,length = 16),seq(500,2000,length = 10),20000))
-#' @return loc location of the centers of bins where the density is estimated
-#' @return f_hat estimated mixing density
-#' @return y_hat marginal density
+#' @param y : a vector containing the raw observations.
+#' @param prop : a scalar between 0 and 1  indicating the proportion of samples to be used as held out set. The default choice is 0.25
+#' @param d : number of bins,  the default choice is floor(  (length(y)^(1/(2.01)) ))
+#' @param lambda_grid : list of reuglarization parameters, default choice is  sort(c(0.001,0.1,5,seq(10,400,length = 16),seq(500,2000,length = 10),20000))
+#' @return loc : location of the centers of bins where the density is estimated
+#' @return f_hat : estimated mixing density
+#' @return y_hat : marginal density
 #' @export
 #' L2_deconvolution
 #'

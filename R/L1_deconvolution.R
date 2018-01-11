@@ -1,11 +1,11 @@
 #' L1  deconconvolution function
 #'
 #' This function allows to perform L1 deconvolution with model selection as in the paper "A deconvolution path for mixtures"
-#' @param y a vector containing the raw observations.
-#' @param d number of bins
-#' @return loc location of the centers of bins where the density is estimated
-#' @return f_hat estimated mixing density
-#' @return y_hat marginal density
+#' @param y : a vector containing the raw observations.
+#' @param d : number of bins
+#' @return loc : location of the centers of bins where the density is estimated
+#' @return f_hat : estimated mixing density
+#' @return y_hat : marginal density
 #' @export
 #' L1_deconvolution
 #'

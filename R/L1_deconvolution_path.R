@@ -1,12 +1,12 @@
 #' L1  deconconvolution function
 #'
-#' This function allows to the deconvolution path using L1  regularization
-#' @param y a vector containing the raw observations.
-#' @param d number of bins
-#' @param lambda_grid list of regularization parameters, default choice is 10^seq(3,-1,length=15)
-#' @return loc location of the centers of bins where the density is estimated
-#' @return f_hat a matrix containing the solution path of mixing densities, each row corresponds to regularization parameter.
-#' @return y_hat a matrix containing the solution path of marginal densities, each row corresponds to regularization parameter.
+#' This function allows to compute the deconvolution path using L1  regularization
+#' @param y : a vector containing the raw observations.
+#' @param d : number of bins
+#' @param lambda_grid : list of regularization parameters, default choice is 10^seq(3,-1,length=15)
+#' @return loc : location of the centers of bins where the density is estimated
+#' @return f_hat : a matrix containing the solution path of mixing densities, each row corresponds to regularization parameter.
+#' @return y_hat : a matrix containing the solution path of marginal densities, each row corresponds to regularization parameter.
 #' @export
 #' L1_deconvolution_path
 

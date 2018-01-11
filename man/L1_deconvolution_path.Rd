@@ -7,19 +7,19 @@
 L1_deconvolution_path(y, d, lambda_grid = 10^seq(3, -1, length = 15))
 }
 \arguments{
-\item{y}{a vector containing the raw observations.}
+\item{y}{: a vector containing the raw observations.}
 
-\item{d}{number of bins}
+\item{d}{: number of bins}
 
-\item{lambda_grid}{list of regularization parameters, default choice is 10^seq(3,-1,length=15)}
+\item{lambda_grid}{: list of regularization parameters, default choice is 10^seq(3,-1,length=15)}
 }
 \value{
-loc location of the centers of bins where the density is estimated
+loc : location of the centers of bins where the density is estimated
 
-f_hat a matrix containing the solution path of mixing densities, each row corresponds to regularization parameter.
+f_hat : a matrix containing the solution path of mixing densities, each row corresponds to regularization parameter.
 
-y_hat a matrix containing the solution path of marginal densities, each row corresponds to regularization parameter.
+y_hat : a matrix containing the solution path of marginal densities, each row corresponds to regularization parameter.
 }
 \description{
-This function allows to the deconvolution path using L1  regularization
+This function allows to compute the deconvolution path using L1  regularization
 }
